@@ -1,0 +1,31 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "iot:Connect",
+      "Resource": [
+        "arn:aws:iot:ap-northeast-1:xxxxx:client/xxxxx",
+        "arn:aws:iot:ap-northeast-1:xxxxx:client/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Subscribe",
+      "Resource": [
+        "arn:aws:iot:ap-northeast-1:xxxxx:topicfilter/aaaa/bbbb",
+        "arn:aws:iot:ap-northeast-1:xxxxx:topicfilter/sdk/test/Python",
+        "arn:aws:iot:ap-northeast-1:xxxxx:topicfilter/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Publish",
+      "Resource": [
+        "arn:aws:iot:ap-northeast-1:xxxxx:topic/cccc/dddd",
+        "arn:aws:iot:ap-northeast-1:xxxxx:topic/sdk/test/Python",
+        "arn:aws:iot:ap-northeast-1:xxxxx:topic/*"
+      ]
+    }
+  ]
+}
